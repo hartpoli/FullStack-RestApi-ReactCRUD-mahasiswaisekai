@@ -1,0 +1,46 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nim": "2002110607412",
+    "name": "Yunihart121211 Baru 1",
+    "email": "mdohart2@gmail12.com",
+    "gender": "Laki-Laki",
+    "hobi": "main game",
+    "semester": 5
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "nim": "20021106074",
+    "name": "Yunihart12121 Poli",
+    "email": "mdohart4@gmail.com",
+    "gender": "Laki-Laki",
+    "hobi": "piano",
+    "semester": 5
+}
+
+###
+PUT http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "nim": "20021106074",
+    "name": "Yunihart Poli",
+    "email": "mdohart4@gmail.com",
+    "gender": "Laki-Laki",
+    "hobi": "sepakbola",
+    "semester": 5
+}
+
+###
+DELETE http://localhost:5000/users/2
